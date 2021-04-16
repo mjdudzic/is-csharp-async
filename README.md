@@ -43,8 +43,8 @@ https://git-scm.com/download/win
 
 ### Weryfikacja środowiska
 
-W celu weryfikacji środowiska należy otworzyć przykładową solucję znajdującą się w repozytorium i uruchomić projekt aplikacji webowej `WebApp`
+W celu weryfikacji środowiska należy otworzyć przykładową solucję, skompilowac kod i uruchomić projekt aplikacji webowej `WebApp`
 Solucja znajduje się tutaj: `Training.Prework/TrainingPrework.sln`
 (repo: https://github.com/mjdudzic/is-csharp-async)
 
-Jeżeli środowisko jest OK solucja zbuduje się poprawnie i zostanie uruchomiona strona startowa `/swagger/index.html`
+Jeżeli środowisko jest OK solucja skompiluje się bez błędów i zostanie uruchomiona strona startowa `/swagger/index.html`
