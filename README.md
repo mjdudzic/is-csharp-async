@@ -1,4 +1,4 @@
-# Szkolenie z podstaw języka C#
+# Szkolenie 'C# async/await advanced'
 
 Repozytorium zawiera materiały przygotowane na potrzeby szkolenia z tematu `C# async/await - advanced`
 
