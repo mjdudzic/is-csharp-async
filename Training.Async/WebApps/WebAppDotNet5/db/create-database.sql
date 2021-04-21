@@ -1,0 +1,34 @@
+CREATE DATABASE TrainingAsyncDb;
+GO
+CREATE LOGIN TrainingAsyncDbUser
+WITH PASSWORD = 'lock@123',
+CHECK_POLICY = OFF,
+CHECK_EXPIRATION = OFF;
+USE TrainingAsyncDb;
+GO
+CREATE USER TrainingAsyncDbUser FOR LOGIN TrainingAsyncDbUser
+WITH DEFAULT_SCHEMA = dbo;
+GO
+EXEC sp_addrolemember 'db_owner', 'TrainingAsyncDbUser';
+GO
+
+USE TrainingAsyncDb;
+GO
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[WeatherForecast](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[TemperatureC] [int] NOT NULL,
+	[Summary] [nvarchar](1000) NULL,
+ CONSTRAINT [PK_WeatherForecast] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+

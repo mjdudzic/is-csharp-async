@@ -1,0 +1,13 @@
+CREATE DATABASE TestLockDb;
+GO
+CREATE LOGIN TestLockDbUser
+WITH PASSWORD = 'lock@123',
+CHECK_POLICY = OFF,
+CHECK_EXPIRATION = OFF;
+USE TestLockDb;
+GO
+CREATE USER TestLockDbUser FOR LOGIN TestLockDbUser
+WITH DEFAULT_SCHEMA = dbo;
+GO
+EXEC sp_addrolemember 'db_owner', 'TestLockDbUser';
+GO
