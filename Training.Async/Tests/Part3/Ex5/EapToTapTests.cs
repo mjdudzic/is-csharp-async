@@ -40,7 +40,7 @@ namespace Tests.Part3.Ex5
 		}
 
 		[Fact]
-		public async Task ApmOperationRunByUsingTapTest()
+		public async Task EapOperationRunByUsingTapTest()
 		{
 			var dataService = new EapDataService();
 

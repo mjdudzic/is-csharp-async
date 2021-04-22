@@ -26,9 +26,10 @@ namespace Tests.Part3.Ex3
 		{
 			using var client = new WebClient();
 			
+			//.ConfigureAwait does not work with WebClient (due to EAP)
+
 			return await client
-				.DownloadStringTaskAsync("https://api.chucknorris.io/jokes/random")
-				.ConfigureAwait(false);
+				.DownloadStringTaskAsync("https://api.chucknorris.io/jokes/random");
 		}
 
 		public async Task<string> GetJokeAsync2()
@@ -36,8 +37,7 @@ namespace Tests.Part3.Ex3
 			using var client = new HttpClient();
 
 			return await client
-				.GetStringAsync("https://api.chucknorris.io/jokes/random")
-				.ConfigureAwait(false);
+				.GetStringAsync("https://api.chucknorris.io/jokes/random");
 		}
 
 		public string GetJoke2()

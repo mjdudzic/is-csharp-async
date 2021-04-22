@@ -31,11 +31,8 @@ namespace Tests.Part4.Ex1
 		{
 			AsyncContext.Run(() =>
 			{
-				var service = new DataService2();
+				var service = new DataService();
 
-				//var task = service.GetJokeAsync().ConfigureAwait(false);
-				//var data = task.GetAwaiter().GetResult();
-				
 				var data = service.GetJokeAsync().Result;
 
 				data.Should().NotBeNullOrWhiteSpace();

@@ -16,8 +16,7 @@ namespace WebAppDotNet48.Services
 		public async Task<string> GetJokeAsync()
 		{
 			return await _httpClient
-					.GetStringAsync("https://api.chucknorris.io/jokes/random")
-					.ConfigureAwait(false);
+					.GetStringAsync("https://api.chucknorris.io/jokes/random");
 		}
 	}
 
