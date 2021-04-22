@@ -23,15 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexDemoApp", "ConsoleApps
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemaphoreDemoApp", "ConsoleApps\SemaphoreDemoApp\SemaphoreDemoApp.csproj", "{7D3AE738-2033-474E-8545-A6B8F07CCDFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedLockDemoApp", "ConsoleApps\DistributedLockDemoApp\DistributedLockDemoApp.csproj", "{E1E6D7E8-7C44-4BD4-8087-AA674C227866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedLockDemoApp", "ConsoleApps\DistributedLockDemoApp\DistributedLockDemoApp.csproj", "{E1E6D7E8-7C44-4BD4-8087-AA674C227866}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{9A5E3EC3-5765-4C91-81AB-BB876E5A0D88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppDotNet48", "WebApps\WebAppDotNet48\WebAppDotNet48.csproj", "{F5B8D820-21A2-4BF7-A02B-6E4ACC055457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppDotNet5", "WebApps\WebAppDotNet5\WebAppDotNet5.csproj", "{1E563CD4-1AD3-4335-B943-B56EE115CB9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppDotNet5", "WebApps\WebAppDotNet5\WebAppDotNet5.csproj", "{1E563CD4-1AD3-4335-B943-B56EE115CB9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDebuggingDemoApp", "ConsoleApps\AsyncDebuggingDemoApp\AsyncDebuggingDemoApp.csproj", "{6CF23E70-2182-4D54-8E7B-8DF12D8C5348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncDebuggingDemoApp", "ConsoleApps\AsyncDebuggingDemoApp\AsyncDebuggingDemoApp.csproj", "{6CF23E70-2182-4D54-8E7B-8DF12D8C5348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTaskWithBenchmarkDemoApp", "ConsoleApps\ValueTaskWithBenchmarkDemoApp\ValueTaskWithBenchmarkDemoApp.csproj", "{4FBDC543-AA23-401C-88BE-5719B307F9F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,10 @@ Global
 		{6CF23E70-2182-4D54-8E7B-8DF12D8C5348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CF23E70-2182-4D54-8E7B-8DF12D8C5348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CF23E70-2182-4D54-8E7B-8DF12D8C5348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBDC543-AA23-401C-88BE-5719B307F9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDC543-AA23-401C-88BE-5719B307F9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBDC543-AA23-401C-88BE-5719B307F9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBDC543-AA23-401C-88BE-5719B307F9F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{F5B8D820-21A2-4BF7-A02B-6E4ACC055457} = {9A5E3EC3-5765-4C91-81AB-BB876E5A0D88}
 		{1E563CD4-1AD3-4335-B943-B56EE115CB9D} = {9A5E3EC3-5765-4C91-81AB-BB876E5A0D88}
 		{6CF23E70-2182-4D54-8E7B-8DF12D8C5348} = {79E03F7D-84B9-4599-BB4A-273E5B5CE01B}
+		{4FBDC543-AA23-401C-88BE-5719B307F9F5} = {79E03F7D-84B9-4599-BB4A-273E5B5CE01B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98CF656C-5707-4478-AD5F-D3EADDE7D7B5}
